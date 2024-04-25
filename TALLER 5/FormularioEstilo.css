@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cfondo);
+  font-family: Comic Sans ms;
+}
+
+.container {
+  
+  max-width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+:root {
+  --cfondo: #A1DBB2;
+  --cfondoForm1: rgba(109, 142, 146, 0.39);
+  --cfondoForm2: #FEE5AD;
+  --cnegro: rgb(98, 78, 98);
+  --ctexto: rgb(98, 78, 98);
+  --ctextoDark: rgb(96, 132, 145);
+  --cblanco: white;
+  --error: rgb(184, 31, 31);
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:checked + label::before {
+  background: var(--cnegro);
+  transition: 0.5s;
+  transform: rotate(180deg);
+}
+
+[type="checkbox"]:checked + label {
+  color: var(--cnegro);
+}
+
+
+
+.form {
+  
+  border-top: 2px solid var(--cnegro);
+  border-radius: 10px;
+  max-width: 400px;
+  padding: 30px 50px;
+  margin: auto;
+  margin-top: 10px;
+  background: linear-gradient(
+    0deg,
+    var(--cfondoForm1) 0%,
+    var(--cfondoForm2) 50%
+  );
+}
+
+.Logo{
+  margin-top: auto;
+  margin-left: 100px;
+  border-radius: 100px; 
+  box-shadow: 0 8px 8px 0 rgb(34, 32, 32, 34);
+}
+
+.form-titulo {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  color:white;
+}
+
+.form-input {
+  margin-bottom: 34px;
+  margin-top: 30px;
+}
+
+.form-input label {
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  color: var(--ctexto);
+}
+
+.form-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid var(--ctexto);
+}
+
+.form-input input:focus + label {
+  font-weight: bold;
+  color: var(--cnegro);
+}
+
+.form-terminos {
+  margin-left: 15px;
+  position: relative;
+  color: azure;
+  font-size: 13px;
+}
+
+.form-terminos label::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--cnegro);
+  position: absolute;
+  left: -14px;
+}
+
+.form-boton input {
+  background: #f5f5f5 ;
+  color: black;
+  padding: 3px 25px;
+  font-size: 25px;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  font-family: Comic Sans ms;
+}
+
+.form-boton input:hover {
+  background: var(--ctextoDark);
+  transition: 0.5s;
+}
+
+.pies{
+  text-align: center;
+  color: aliceblue;
+}
+
+/* Estilo para el menú desplegable personalizado */
+.styled-select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilo para las opciones del menú desplegable */
+.styled-select option {
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Estilo cuando el menú desplegable está enfocado */
+.styled-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.6); /* Cambiar color de sombra al enfocar */
+}
