@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Cliente</title>
+  <link rel="stylesheet" href="FormularioEstilo.css">
+  
+</head>
+<body>
+  <div class="container">
+    <form action="" class="form" id="form" autocomplete="off">
+      <p class="form-titulo">Formulario de registro <br>de clientes</p>
+      <img class="Logo" src="ClienteFormulario.png" alt="" height="105" width="113" >
+      <div class="form-input myname">
+        <input type="text" id="myname">
+        <label for="myname">Nombres y Apellidos</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input">
+        <input type="text" id="cedula" pattern="[0-9]*" inputmode="numeric">
+        <label for="cedula">Nº de Cedula</label>
+        <p class="mensajeError" id="errorCedula"></p>
+      </div>
+      <div class="form-input">
+        <label for="civilStatus">Estado Civil</label>
+        <select id="civilStatus" class="styled-select">
+          <option value="soltero">Soltero/a</option>
+          <option value="casado">Casado/a</option>
+          <option value="divorciado">Divorciado/a</option>
+          <option value="viudo">Viudo/a</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="form-input email">
+        <input type="email" id="email">
+        <label for="email">Correo electrónico</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input mobile">
+        <input type="text" id="mobile">
+        <label for="mobile">Teléfono</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input direccion">
+        <input type="texto" id="direccion">
+        <label for="direccion">Dirección</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input fecha">
+        <input type="date" id="fecha">
+        <label for="fecha">Fecha Nacimiento</label>
+        <p class="mensajeError"></p>
+      </div>
+
+      <div class="form-input">
+        <input type="text" id="cedula" pattern="[0-9]*" inputmode="numeric">
+        <label for="cedula">Nº de Cedula</label>
+        <p class="mensajeError" id="errorCedula"></p>
+      </div>
+
+      <div class="form-boton" >
+        <input type="submit" value="Enviar">
+      </div>
+      <p class="mensajeCorrecto"></p>
+    </form>
+  </div>
+  <script src="FormularioJava.js"></script>
+</body>
+
+</html>
