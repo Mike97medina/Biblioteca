@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Responsiive Admin Dashboard | CodingLab </title>
+	<link rel="stylesheet" href="../assets/styles/dashboard.css">
+	<!-- Boxicons CDN Link -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+	<!----css3---->
+	<link rel="stylesheet" href="../assets/styles/custom.css">
+
+
+	<!--google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+	<!--google material icon-->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.3/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+	<div class="sidebar">
+		<div class="logo-details">
+			<i class='bx bx bx-book-alt'></i>
+			<span class="logo_name">Biblioteca</span>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="dashboard.html">
+					<i class='bx bx-grid-alt'></i>
+					<span class="links_name">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="users.html">
+					<i class='bx bx-user'></i>
+					<span class="links_name">Usuarios</span>
+				</a>
+			</li>
+			<li>
+				<a href="students.html" class="active">
+					<i class='bx bxs-user-account'></i>
+					<span class="links_name">Estudiantes</span>
+				</a>
+			</li>
+			<li>
+				<a href="books.html">
+					<i class='bx bx-book-open'></i>
+					<span class="links_name">Libros</span>
+				</a>
+			</li>
+			<li>
+				<a href="rent_book.html">
+					<i class='bx bx-book-add'></i>
+					<span class="links_name">Alquiler</span>
+				</a>
+			</li>
+			<li class="log_out">
+				<a href="login.html">
+					<i class='bx bx-log-out'></i>
+					<span class="links_name">Log out</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<section class="home-section">
+		<nav>
+			<div class="sidebar-button">
+				<i class='bx bx-menu sidebarBtn'></i>
+				<span class="dashboard">Estudiantes</span>
+			</div>
+			<div class="profile-details">
+				<img src="../assets/img/hombre.png" alt="">
+				<span class="admin_name">Prem Shahi</span>
+			</div>
+		</nav>
+
+		<div class="home-content">
+			<div class="main-content">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="table-wrapper">
+
+							<div class="table-title">
+								<div class="row">
+									<div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
+										<h2 class="ml-lg-2">Administración de Estudiantes</h2>
+									</div>
+									<div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
+										<a href="#addStudent" class="btn btn-success" data-toggle="modal">
+											<i class="material-icons">&#xE147;</i>
+											<span>Añadir Estudiante</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th><span class="custom-checkbox">
+												<input type="checkbox" id="selectAll">
+												<label for="selectAll"></label></th>
+										<th>Nombre</th>
+										<th>Email</th>
+										<th>Teléfono</th>
+										<th>Facultad</th>
+										<th>Carrera</th>
+										<th>Acciones</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<th><span class="custom-checkbox">
+												<input type="checkbox" id="checkbox1" name="option[]" value="1">
+												<label for="checkbox1"></label></th>
+										<th>Pedro Sánchez</th>
+										<th>pedro.sanchez@example.com</th>
+										<th>0954612131</th>
+										<th>Ciencias de la Vida...</th>
+										<th>Ingeniería en TI</th>
+										<th>
+											<a href="#editStudent" class="edit" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip"
+													title="Edit">&#xE254;</i>
+											</a>
+											<a href="#deleteStudent" class="delete" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip"
+													title="Delete">&#xE872;</i>
+											</a>
+										</th>
+									</tr>
+									<tr>
+										<th><span class="custom-checkbox">
+												<input type="checkbox" id="checkbox1" name="option[]" value="1">
+												<label for="checkbox1"></label></th>
+										<th>Lucía Pérez</th>
+										<th>lucia.perez@example.com</th>
+										<th>0954612131</th>
+										<th>Ciencias de la Salud</th>
+										<th>Medicina</th>
+										<th>
+											<a href="#editStudent" class="edit" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip"
+													title="Edit">&#xE254;</i>
+											</a>
+											<a href="#deleteStudent" class="delete" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip"
+													title="Delete">&#xE872;</i>
+											</a>
+										</th>
+									</tr>
+									<tr>
+										<th><span class="custom-checkbox">
+												<input type="checkbox" id="checkbox1" name="option[]" value="1">
+												<label for="checkbox1"></label></th>
+										<th>Roberto Gómez</th>
+										<th>roberto.gomez@example.com</th>
+										<th>0954612131</th>
+										<th>Ciencias administrativas, contables y comercio</th>
+										<th>Comercio Exterior</th>
+										<th>
+											<a href="#editStudent" class="edit" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip"
+													title="Edit">&#xE254;</i>
+											</a>
+											<a href="#deleteStudent" class="delete" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip"
+													title="Delete">&#xE872;</i>
+											</a>
+										</th>
+									</tr>
+									<tr>
+										<th><span class="custom-checkbox">
+												<input type="checkbox" id="checkbox1" name="option[]" value="1">
+												<label for="checkbox1"></label></th>
+										<th>Elena Torres</th>
+										<th>elena.torres@example.com</th>
+										<th>0954612131</th>
+										<th>Educacion turismo artes y humanidades </th>
+										<th>Educacion Inicial</th>
+										<th>
+											<a href="#editStudent" class="edit" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip"
+													title="Edit">&#xE254;</i>
+											</a>
+											<a href="#deleteStudent" class="delete" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip"
+													title="Delete">&#xE872;</i>
+											</a>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+							<div class="clearfix">
+								<div class="hint-text">showing <b>5</b> out of <b>25</b></div>
+								<ul class="pagination">
+									<li class="page-item disabled"><a href="#">Previous</a></li>
+									<li class="page-item "><a href="#" class="page-link">1</a></li>
+									<li class="page-item "><a href="#" class="page-link">2</a></li>
+									<li class="page-item active"><a href="#" class="page-link">3</a></li>
+									<li class="page-item "><a href="#" class="page-link">4</a></li>
+									<li class="page-item "><a href="#" class="page-link">5</a></li>
+									<li class="page-item "><a href="#" class="page-link">Next</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" tabindex="-1" id="addStudent" role="dialog">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Estudiante Nuevo</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<form id="registroForm" action="">
+									<div class="modal-body">
+										<div class="form-group">
+											<label>Nombre</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Email</label>
+											<input type="email" class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Teléfono</label>
+											<input type="tel" class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Facultad</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Carrera</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-dismiss="modal">Cancelar</button>
+										<button type="submit" class="btn btn-success">Añadir</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" tabindex="-1" id="editStudent" role="dialog">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Editar Estudiante</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<form id="registroFormEdit" action="">
+									<div class="modal-body">
+										<div class="form-group">
+											<label>Nombre</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Email</label>
+											<input type="email" class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Teléfono</label>
+											<input type="tel" class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Facultad</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label>Carrera</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-dismiss="modal">Cancelar</button>
+										<button type="submit" class="btn btn-success">Añadir</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" tabindex="-1" id="deleteStudent" role="dialog">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Eliminar Estudiante</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<p>¿Estas seguro de que deseas eliminar este estudiante?</p>
+									<p class="text-warning"><small>esta accion no se puede revertir,</small></p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-dismiss="modal">Cancelar</button>
+									<button type="button" class="btn btn-success">Eliminar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="../assets/js/dashboard.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="../assets/js/popper.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/jquery-3.3.1.min.js"></script>
+	<script src="../assets/js/student.js"></script>
+
+</body>
+
+</html>
