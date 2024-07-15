@@ -1,0 +1,317 @@
+<body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bx bx-book-alt'></i>
+        <span class="logo_name">Biblioteca</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a routerLink="/dashboard" >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/usuarios">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Usuarios</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/estudiantes">
+            <i class='bx bxs-user-account' ></i>
+            <span class="links_name">Estudiantes</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/books" class="active">
+            <i class='bx bx-book-open' ></i>
+            <span class="links_name">Libros</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/alquiler">
+            <i class='bx bx-book-add' ></i>
+            <span class="links_name">Alquiler</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a routerLink="/login">
+              <i class='bx bx-log-out'></i>
+              <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class='bx bx-menu sidebarBtn'></i>
+          <span class="dashboard">Libros</span>
+        </div>
+        <div class="profile-details">
+          <img src="../../assets/hombre.png" alt="">
+          <span class="admin_name">Prem Shahi</span>
+        </div>
+      </nav>
+  
+      <div class="home-content">
+        <div class="main-content">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="table-wrapper">
+  
+                              <div class="table-title">
+                                  <div class="row">
+                                      <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
+                                          <h2 class="ml-lg-2">Administración de Libros</h2>
+                                      </div>
+                                      <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
+                                          <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+                                              <i class="material-icons">&#xE147;</i>
+                                              <span>Añadir Libro</span>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+  
+                              <table class="table table-striped table-hover">
+                                  <thead>
+                                      <tr>
+                                          <th><span class="custom-checkbox">
+                                                  <input type="checkbox" id="selectAll">
+                                                  <label for="selectAll"></label>
+                                                </span></th>
+                                          <th>Título</th>
+                                          <th>Autor</th>
+                                          <th>Editorial</th>
+                                          <th>Fecha de Publicación</th>
+                                          <th>Acciones</th>
+                                      </tr>
+                                  </thead>
+  
+                                  <tbody>
+                                      <tr>
+                                          <th><span class="custom-checkbox">
+                                                  <input type="checkbox" id="checkbox1" name="option[]" value="1">
+                                                  <label for="checkbox1"></label>
+                                                </span></th>
+                                          <th>Harry Potter</th>
+                                          <th>J.K Rowling</th>
+                                          <th>Ediciones Salamandra</th>
+                                          <th>2008</th>
+                                          <th>
+                                              <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Edit">&#xE254;</i>
+                                              </a>
+                                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Delete">&#xE872;</i>
+                                              </a>
+                                          </th>
+                                      </tr>
+                                      <tr>
+                                          <th><span class="custom-checkbox">
+                                                  <input type="checkbox" id="checkbox1" name="option[]" value="1">
+                                                  <label for="checkbox1"></label>
+                                                </span></th>
+                                          <th>Harry Potter</th>
+                                          <th>J.K Rowling</th>
+                                          <th>Ediciones Salamandra</th>
+                                          <th>2008</th>
+                                          <th>
+                                              <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Edit">&#xE254;</i>
+                                              </a>
+                                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Delete">&#xE872;</i>
+                                              </a>
+                                          </th>
+                                      </tr>
+                                      <tr>
+                                          <th><span class="custom-checkbox">
+                                                  <input type="checkbox" id="checkbox1" name="option[]" value="1">
+                                                  <label for="checkbox1"></label>
+                                                </span></th>
+                                          <th>Harry Potter</th>
+                                          <th>J.K Rowling</th>
+                                          <th>Ediciones Salamandra</th>
+                                          <th>2008</th>
+                                          <th>
+                                              <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Edit">&#xE254;</i>
+                                              </a>
+                                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Delete">&#xE872;</i>
+                                              </a>
+                                          </th>
+                                      </tr>
+                                      <tr>
+                                          <th><span class="custom-checkbox">
+                                                  <input type="checkbox" id="checkbox1" name="option[]" value="1">
+                                                  <label for="checkbox1"></label>
+                                                </span></th>
+                                          <th>Harry Potter</th>
+                                          <th>J.K Rowling</th>
+                                          <th>Ediciones Salamandra</th>
+                                          <th>2008</th>
+                                          <th>
+                                              <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Edit">&#xE254;</i>
+                                              </a>
+                                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Delete">&#xE872;</i>
+                                              </a>
+                                          </th>
+                                      </tr>
+                                      <tr>
+                                          <th><span class="custom-checkbox">
+                                                  <input type="checkbox" id="checkbox1" name="option[]" value="1">
+                                                  <label for="checkbox1"></label>
+                                                </span></th>
+                                          <th>Harry Potter</th>
+                                          <th>J.K Rowling</th>
+                                          <th>Ediciones Salamandra</th>
+                                          <th>2008</th>
+                                          <th>
+                                              <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Edit">&#xE254;</i>
+                                              </a>
+                                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                  <i class="material-icons" data-toggle="tooltip"
+                                                      title="Delete">&#xE872;</i>
+                                              </a>
+                                          </th>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              <div class="clearfix">
+                                  <div class="hint-text">showing <b>5</b> out of <b>25</b></div>
+                                  <ul class="pagination">
+                                      <li class="page-item disabled"><a href="#">Previous</a></li>
+                                      <li class="page-item "><a href="#" class="page-link">1</a></li>
+                                      <li class="page-item "><a href="#" class="page-link">2</a></li>
+                                      <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                      <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                      <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                      <li class="page-item "><a href="#" class="page-link">Next</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="modal fade" tabindex="-1" id="addEmployeeModal" role="dialog">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title">Libro Nuevo</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <form id="registroForm" [formGroup]="registroForm" (ngSubmit)="onSubmit()" action="">
+                                      <div class="modal-body">
+                                          <div class="form-group">
+                                              <label>Titulo</label>
+                                              <input type="text" formControlName="titulo" class="form-control">
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Autor</label>
+                                              <input type="text" formControlName="autor" class="form-control">
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Editorial</label>
+                                              <input type="text" formControlName="editorial" class="form-control">
+                                          </div>
+                                          <div class="form-group">
+                                              <label>Fecha de Publicación</label>
+                                              <input type="date" formControlName="fecha" class="form-control">
+                                          </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                          <button type="submit" class="btn btn-success">Añadir</button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="modal fade" tabindex="-1" id="editEmployeeModal" role="dialog">
+                          <div class="modal-dialog" role="document">
+                                    <form id="registroFormEdit" [formGroup]="registroFormEdit" (ngSubmit)="onSubmit_edit()" action="">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Editar Libro</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <label>Titulo</label>
+                                                    <input type="text" formControlName="titulo"  class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Autor</label>
+                                                    <input type="text" formControlName="autor" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Editorial</label>
+                                                    <input type="text" formControlName="editorial" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Fecha de Publicación</label>
+                                                    <input type="date" formControlName="fecha" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                <button type="submit" class="btn btn-success">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="modal fade" tabindex="-1" id="deleteEmployeeModal" role="dialog">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title">Eliminar Libro</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <p>¿Estas seguro de que deseas eliminar este libro?</p>
+                                      <p class="text-warning"><small>esta accion no se puede revertir,</small></p>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                      <button type="button" class="btn btn-success">Eliminar</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+    </div>
+      
+    </section>
+  
+    <!-- <script src="../assets/js/dashboard.js"></script> -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <!-- <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+     <script src="../assets/js/popper.min.js"></script>
+     <script src="../assets/js/bootstrap.min.js"></script>
+     <script src="../assets/js/jquery-3.3.1.min.js"></script>
+     <script src="../assets/js/book.js"></script> -->
+  
+  </body>
+  <router-outlet></router-outlet>
