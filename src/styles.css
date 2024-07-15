@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.border_black{border: 5px solid black;}
+.border_v{border: 5px solid violet;}
+.border_w{border: 5px solid white;}
+.border_r{border: 5px solid red;}
+.border_y{border: 5px solid yellow;}
+.border_o{border: 5px solid orange;}
+.border_blue{border: 5px solid blue}
+.relleno_r{background-color: red;}
+.color_konosuba{color:rgb(52, 143, 213);}
